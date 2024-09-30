@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Nova tarefa</title>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+    <header>
+        <h1>Nova tarefa</h1>
+    </header>
+    <main>
+        <section>
+            <input type="text" placeholder="Nome" id="task-name">
+            <input type="text" placeholder="Descrição" id="task-desc">
+            <input type="date" placeholder="Data inicial da tarefa" id="task-initial-date">
+            <input type="date" placeholder="Data limite da tarefa" id="task-limit-date">
+            <div class="modulo-filtro">
+            <select id="posicao-seletor">
+                <option value="all">Selecione o tipo de tarefa</option>
+                <option value="SCHEDULE">Agenda</option>
+                <option value="JOB">Trabalho</option>
+                <option value="STUDY">Estudos</option>
+                <option value="PERSONAL">Pessoal</option>
+            </select>
+        </div>
+        <button onclick="salvar()" class="button-save">Incluir Nova Tarefa</button>
+        </section>
+    </main>
+    <script src="saveTasks.js"></script>
+</body>
+
+</html>

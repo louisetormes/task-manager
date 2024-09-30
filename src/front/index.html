@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task Manager</title>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+    <header class="inicial">
+        <h1>Task Manager</h1>
+    </header>
+    <main>
+    <div class="sidebar">
+        <div class="w3-sidebar w3-bar-block" style="width:25%; position: fixed; left: 0; top: 0; height: 100%; background-color: #7189a5;">
+            <a href="./newTask/index.html" class="w3-bar-item w3-button">Cadastrar nova tarefa</a>
+            <a href="#" class="w3-bar-item w3-button">Minhas tarefas</a>
+            <a href="#" class="w3-bar-item w3-button">Tarefas pendentes</a>
+          </div>
+        </div>
+        <section class="inicial">
+            <input type="text" placeholder="Busque sua tarefa" id="campo-pesquisa link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <button onclick="buscar()" class="fa fa-search"></button>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+			</section>
+            
+    </main>
+    <footer>
+        <p>2024 - Task Manager. Todos direitos reservados.</p>
+    </footer>
+    <script src="getTasks.js"></script>
+    <script src="app.js"></script>
+	<script src="habilidades.js"></script>
+    <script src="filtro.js"></script>
+</body>
+
+</html>
+
+<!--             <div class="modulo-filtro">
+            <select id="posicao-seletor">
+                <option value="all">Todas as Posições</option>
+                <option value="Duelista">Duelista</option>
+                <option value="Controlador">Controlador</option>
+                <option value="Iniciador">Iniciador</option>
+                <option value="Sentinela">Sentinela</option>
+            </select>
+            <button onclick="filtrarAgentePorPosicao()">Filtrar por posição do agente</button>
+        </div> -->
