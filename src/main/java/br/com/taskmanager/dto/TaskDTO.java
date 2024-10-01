@@ -7,10 +7,12 @@ import java.util.Date;
 import br.com.taskmanager.enums.TaskType;
 import jakarta.json.bind.annotation.JsonbProperty;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@NoArgsConstructor
 public class TaskDTO implements Serializable{
 
     @JsonbProperty("taskName")

@@ -8,8 +8,10 @@ import br.com.taskmanager.entities.Task;
 import br.com.taskmanager.persistence.PersistTask;
 import br.com.taskmanager.repositories.TaskRepository;
 import br.com.taskmanager.transform.DTOToEntity;
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 
+@ApplicationScoped
 public class TaskServices {
 
     @Inject

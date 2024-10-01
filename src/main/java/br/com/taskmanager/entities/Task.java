@@ -11,10 +11,12 @@ import javax.persistence.Table;
 import org.hibernate.annotations.GenericGenerator;
 
 import br.com.taskmanager.enums.TaskType;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 
 @Table(name = "task")
 @Builder(setterPrefix = "With")
+@AllArgsConstructor
 public class Task {
 
 	@Id

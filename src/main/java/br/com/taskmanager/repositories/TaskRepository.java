@@ -5,7 +5,9 @@ import java.util.List;
 
 import br.com.taskmanager.entities.Task;
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
+import jakarta.enterprise.context.ApplicationScoped;
 
+@ApplicationScoped
 public class TaskRepository implements PanacheRepository<Task>{
 
     public Task getByName(String name){
